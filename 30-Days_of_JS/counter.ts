@@ -1,4 +1,4 @@
-function createCounter(n: number): () => number {
+function createCounterII(n: number): () => number {
     return function Counter() {
         return n++
     }
