@@ -1,3 +1,3 @@
-function createHelloWorld() {
-    return () => 'Hello World';
-}
+const createHelloWorld = () => {
+  return () => "Hello World";
+};
