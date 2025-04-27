@@ -9,6 +9,6 @@ var filter = function(arr, fn) {
         if(fn(arr[i], i)) {
             filteredArr.push(arr[i])
         }
-    }  
-
+    }
+    return filteredArr
 };
