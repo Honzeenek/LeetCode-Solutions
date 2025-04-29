@@ -21,3 +21,25 @@ function expect(val: any): ToBeOrNotToBe {
         }
     }
 };
+
+var expect = function(val) {
+    function expect(val) {
+        return {
+            toBe(testValue) {
+                if(testValue === val){
+                    return true
+                } else {
+                    throw new Error('Not Equal')
+                }
+                
+            },
+            notToBe(testValue) {
+                if(testVal !== val) {
+                    return true
+                } else {
+                    throw new Error('Equal')
+                }
+            } 
+        }
+    }
+};
