@@ -10,6 +10,5 @@ var filter = function(arr, fn) {
             filteredArr.push(arr[i])
         }
     }
-    
     return filteredArr
 };
